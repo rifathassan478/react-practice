@@ -2,6 +2,7 @@ import Counter from "./Counter";
 // import Batsman from './Batsman';
 import Users from "./Users";
 import Friends from "./Friends";
+import Players from "./Players";
 
 import "./App.css";
 import { Suspense } from "react";
@@ -32,6 +33,7 @@ function App() {
 
     return (
         <>
+        <Players></Players>
             <Suspense fallback={<h3>Friends are coming...</h3>}>
                 <Friends friendsPromise={friendsPromise}></Friends>
             </Suspense>
